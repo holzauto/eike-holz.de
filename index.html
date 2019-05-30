@@ -2,12 +2,12 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <title>Jan P&ouml;schko</title>
+    <title>Eike Christian Holz</title>
     <link rel="icon" sizes="32x32" href="favicon-32x32.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <meta
       name="description"
-      content="The personal website of Jan P&ouml;schko."
+      content="The personal website of Eike Christian Holz."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
@@ -68,20 +68,13 @@
   </head>
   <body>
     <h1>
-      Jan P<a
-        id="oWithUmlaut"
-        tabindex="-1"
-        aria-disabled="true"
-        href="javascript:doBarrelRoll()"
-        title="This is an &quot;o with umlaut&quot;, sometimes spelled as &quot;oe&quot;. What will clicking it do?"
-        >&ouml;</a
-      >schko
+      Eike Christian Holz
     </h1>
     <ul class="links">
       <li>
         <a
-          href="https://twitter.com/poeschko"
-          title="Jan P&ouml;schko on Twitter"
+          href="https://twitter.com/holzauto"
+          title="Eike Holz on Twitter"
           ><svg
             style="enable-background:new 0 0 67 67;"
             viewBox="0 0 67 67"
@@ -108,102 +101,13 @@
             /></svg
         ></a>
       </li>
-      <li>
-        <a
-          href="https://www.linkedin.com/in/poeschko/"
-          title="Jan P&ouml;schko on LinkedIn"
-          ><svg
-            style="enable-background:new 0 0 67 67;"
-            viewBox="0 0 67 67"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <desc>LinkedIn icon</desc>
-            <path
-              d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"
-              style="fill-rule:evenodd;clip-rule:evenodd;fill:#010101;"
-            /></svg
-        ></a>
-      </li>
     </ul>
     <p>I make things on the Web.</p>
     <p>
-      I read and write JavaScript, Java, Python, and
-      the&nbsp;Wolfram&nbsp;Language,<br />and I work with technologies such as
-      <a href="https://www.reactjs.org">React</a>,
-      <a href="https://mobx.js.org/">MobX</a>,
-      <a href="https://webpack.js.org/">webpack</a>,
-      <a href="https://github.com/css-modules/css-modules">CSS&nbsp;Modules</a>,
-      <a href="https://flow.org/">Flow</a>, and&nbsp;<a
-        href="https://jestjs.io/"
-        >Jest</a
-      >.
-    </p>
-    <p>
-      Please <a href="mailto:contact@poeschko.com">contact me</a> if you want to
-      work with me.
+      Please <a href="mailto:eike@holz.cloud">contact me</a> if you want to know more about me.
     </p>
     <p class="footer">
-      <a href="./impressum.html" hreflang="de-AT">Impressum</a>
+      <a href="./impressum.html" hreflang="de-DE">Impressum</a>
     </p>
-    <script>
-      var isForward = true;
-      var body = document.body;
-      body.addEventListener(
-        "animationend",
-        function(event) {
-          body.className = "";
-        },
-        false
-      );
-
-      function doBarrelRoll() {
-        var o = document.getElementById("oWithUmlaut");
-        var bodyRect = body.getBoundingClientRect();
-        var oRect = o.getBoundingClientRect();
-        var x = (oRect.left + oRect.right) / 2 - bodyRect.left;
-        var y = (oRect.top + oRect.bottom) / 2 - bodyRect.top;
-        body.style.transformOriginX = x + "px";
-        body.style.transformOriginY = y + "px";
-        body.style.webkitTransformOriginX = x + "px";
-        body.style.webkitTransformOriginY = y + "px";
-        if (isForward) {
-          body.className = "barrelroll";
-        } else {
-          body.className = "barrelroll-reverse";
-        }
-        isForward = !isForward;
-      }
-    </script>
-    <style>
-      @keyframes roll {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-      }
-      @keyframes roll-reverse {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-      }
-      body.barrelroll,
-      body.barrelroll-reverse {
-        animation-duration: 2s;
-        animation-iteration-count: 1;
-        overflow: hidden;
-      }
-      body.barrelroll {
-        animation-name: roll;
-      }
-      body.barrelroll-reverse {
-        animation-name: roll-reverse;
-        animation-direction: reverse;
-      }
-    </style>
   </body>
 </html>
