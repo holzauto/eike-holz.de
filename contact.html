@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+  <head>
+    <meta charset="utf-8" />
+    <title>Eike Christian Holz</title>
+    <link rel="icon" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <meta
+      name="description"
+      content="Impressum der Website von Eike Christian Holz."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Mr+De+Haviland&display=swap');
+      body {
+        margin: 16px;
+        text-align: center;
+      }
+      h1,
+      p {
+        font-family: Georgia, Times, "Times New Roman", serif;
+      }
+      h1 {
+        font-size: 28pt;
+      }
+      main {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      abbr {
+        text-decoration: none;
+      }
+      .title {
+        font-family: "Mr De Haviland", cursive;
+        font-size: 24pt;
+        font-weight: normal;
+        margin-top: 0.3em;
+        margin-bottom: 0;
+      }
+      .title a {
+        text-decoration: none;
+      }
+      p {
+        font-size: 13pt;
+        text-align: left;
+      }
+      a {
+        color: currentColor;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title"><a href="/">Eike Christian Holz</a></div>
+    <h1>Impressum</h1>
+    <main>
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+        <p>
+          <label>Name: <input type="text" name="name" /></label>   
+        </p>
+        <p>
+          <label>Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <p style="display:none;">
+          <label>Don’t fill this out: <input name="bot-field"></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+    </main>
+  </body>
+</html>
