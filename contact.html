@@ -27,11 +27,6 @@
         max-width: 400px;
         margin-left: auto;
         margin-right: auto;
-        border:1px dashed;
-      }
-      label {
-        width: 150px;
-        border:1px dashed;
       }
       abbr {
         text-decoration: none;
@@ -53,6 +48,13 @@
       a {
         color: currentColor;
       }
+      input {
+        float: right;
+        width: 320px;
+      }
+      button {
+        float: right;
+      }
     </style>
   </head>
   <body>
@@ -68,6 +70,7 @@
         </p>
         <p>
           <label>Message:</label><textarea name="message" required></textarea>
+          <br /><br />
         </p>
         <p style="display:none;">
           <label>Don’t fill this out: <input name="bot-field"></label>
